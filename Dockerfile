@@ -8,7 +8,4 @@ RUN apt-get update && apt-get install wget unzip -y && \
 RUN mkdir /etc/service/openhab
 ADD openhab.sh /etc/service/openhab/run
 
-RUN chown -R abc:abc /config
-RUN chown -R abc:abc /app
-
 EXPOSE 8080
